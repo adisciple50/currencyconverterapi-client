@@ -3,7 +3,6 @@ require 'date'
 class CurrencyConverterApi
   include HTTParty
   include Credentials
-  base_uri 'https://tradeup.currconv.com'
   Ultra = 'ultra'
   attr_accessor :pairs_to_query,:compact
   attr_writer :api_key
