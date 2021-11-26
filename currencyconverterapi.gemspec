@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "../lib/currencyconverterapi/sion"
+require_relative "../lib/currencyconverterapi/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "currencyconverterapi"
