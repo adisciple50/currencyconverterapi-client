@@ -1,3 +1,4 @@
+module CurrencyConverterApi
 require 'httparty'
 require 'date'
 class CurrencyConverterApi
@@ -7,7 +8,7 @@ class CurrencyConverterApi
   attr_accessor :pairs_to_query,:compact
   attr_writer :api_key
 
-  def initialize(service, page)
+  def initialize
     @pairs_to_query = []
     @compact = Ultra
     @api_key = ENV['currency_converter_api']
@@ -36,4 +37,5 @@ class CurrencyConverterApi
     end
     self.class.get('/api/v7/convert',@options['query'].merge({q:@pairs_to_query,compact:@compact,date:date.strftime("%Y-%m-%d"),endDate:date.strftime("%Y-%m-%d")}))
   end
+end
 end
