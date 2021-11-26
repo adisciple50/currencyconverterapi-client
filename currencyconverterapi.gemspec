@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jesusislord33333@outlook.com"]
 
   spec.summary       = "an api library for currencyconverterapi.com using httparty"
-  spec.description   = "an api library for currencyconverterapi.com using httparty"
+  # spec.description   = "an api library for currencyconverterapi.com using httparty"
   spec.homepage      = "https://github.com/adisciple50/currencyconverterapi-client"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
